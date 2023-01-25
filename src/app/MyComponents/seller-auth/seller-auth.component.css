@@ -1,0 +1,19 @@
+body{
+    background-size: auto;
+    background-image:url('bgseller.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:63px;
+    height: 100%;
+}
+input[type="text"], textarea {
+
+    background-color : white; 
+  
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+  }

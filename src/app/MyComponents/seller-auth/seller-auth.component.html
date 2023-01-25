@@ -1,0 +1,30 @@
+<body>
+<div class="col d-flex justify-content-center" style="margin:25px; ">
+    <div class="card justify-content-center opacity-75" style="width:25rem">
+        <div class="col d-flex justify-content-center" style="margin-top: 30px;">
+            <h3>Seller Sign-Up</h3>
+        </div>
+        <form #SellerSignUp="ngForm" (ngSubmit)="signUp(SellerSignUp.value)" style=" margin-top:0px; margin:50px">
+            <div class="mb-3">
+                <label for="Seller-user-name" class="form-label">Username</label>
+                <input type="email" ngModel class="form-control" id="usernameid" name="username" aria-describedby="usernameHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" ngModel class="form-control" id="selleremail" aria-describedby="emailHelp" name="email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="InputPassword" class="form-label">Password</label>
+                <input name="password" ngModel type="password" class="form-control" id="sellerpassword">
+            </div>
+            <div class="mb-3">
+                <label for="confirmpassword" class="form-label">Confirm Password</label>
+                <input name="confirmpassword" ngModel type="password" class="form-control" id="confirmsellerpassword">
+            </div>
+            <div class="col d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Submit</button></div>
+        </form>
+    </div>
+</div>
+</body>
